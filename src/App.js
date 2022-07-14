@@ -46,7 +46,8 @@ export default function App() {
     React.useEffect(() => {
         if(playerScore !== 0){
             if(playerScore > 21){
-                hold()
+                setWinner("Busted! You lost")
+                setGameStatus(false)
                 console.log("player busted after drawing")
             } else if(playerScore === 21){
                 hold()

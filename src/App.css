@@ -162,7 +162,8 @@ button{
     border: black solid;
     border-width: 5px;
     margin-bottom: auto;
-    margin-top: 70%;
+    margin-top: 30%;
+    max-width: 40%;
 }
 
 .directions--container{
@@ -171,16 +172,17 @@ button{
     color: #003049;
     background-color: #F77F00;
     border-width: 5px;
-    width: 70%;
+    width: fit-content;
+    max-width: 50%;
     text-align: center;
     height: fit-content;
-    padding: 15px;
+    padding: 5px;
     border-radius: 20px;
     -webkit-box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75);
     box-shadow: -1px 9px 18px 0px rgba(0,0,0,0.75);
     align-self: center;
-    margin-top: auto;
+    margin-top: 10px;
     margin-bottom: 150px;
 }
 
@@ -225,16 +227,18 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-   
+    width: 30%;
 }
 
 .directions--list{
     list-style: disc;
     text-align: start;
+    margin: 0;
 }
 
 .directions--list > li {
-    margin: 5px;
+    margin: -5px;
+    font-size: 20px;
 }
 
 .sprite--container{
@@ -248,4 +252,121 @@ button{
 .player--title{
     margin: 0;
     padding: 0;
+}
+
+@media only screen and (max-width: 1000px){
+    
+    .directions--list > li {
+        
+        font-size: 15px;
+    }
+
+    .winner{
+        font-size: 15px;
+    }
+
+    .card--wrapper{
+        width: 60px;
+        height: 92px;
+    }
+
+    .directions--list{
+        padding: 18px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .cards--container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cards--container--dealer--end{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards--container div:not(:first-child){
+        margin-left: 0;
+    }
+    
+    .cards--container--dealer--end div:not(:first-child){
+        margin-left: 0;
+    }
+
+    .player--title{
+        font-size: 30px;
+    }
+
+    .bulldog{
+        width: 200px;
+    }
+
+    .directions--container{
+        padding: 3px;
+    }
+
+    .directions--list > li {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+
+    button{
+        width: fit-content;
+    }
+
+    
+}
+
+@media only screen and (max-width: 400px) {
+    .bulldog{
+        width: 180px;
+    }
+
+    button{
+        font-size: 15px;
+    }
+
+    .card--wrapper{
+        width: 45px;
+        height: 69px;
+    }
+
+    .card--symbol{
+        font-size: 20px;
+    }
+
+    .directions--container{
+        font-size: 10px;
+    }
+
+    .winner{
+        font-size: 10px;
+    }
+
+    .score{
+        font-size: 18px;
+    }
+
+    .score--dealer{
+        font-size: 18px;
+    }
+
+    .player--title{
+        font-size: 20px;
+    }
+
+    .directions--container{
+        padding: 0;
+    }
+
+    .directions--list > li {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .directions--list{
+        padding: 10px;
+    }
+
 }
