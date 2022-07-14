@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BlackJack-MJ/static/css/main.560045e3.css",
+    "main.js": "/BlackJack-MJ/static/js/main.47504026.js",
+    "index.html": "/BlackJack-MJ/index.html",
+    "main.560045e3.css.map": "/BlackJack-MJ/static/css/main.560045e3.css.map",
+    "main.47504026.js.map": "/BlackJack-MJ/static/js/main.47504026.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.560045e3.css",
+    "static/js/main.47504026.js"
+  ]
+}
